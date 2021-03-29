@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/tailwind.css"/>
+    <link rel="stylesheet" href="css/launch.css" />
+
+
+</head>
+<body>
+    
+    <a href="/" class="go_back">Go back</a>
+    <h1 class="heading">GZM Launches</h1>
+
+    <div class = "grid grid-cols-1 gap-4 md:grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
+        
+        <% projects.forEach(function(project) { %>
+
+        <div class="mt-16 max-w-sm rounded overflow-hidden shadow-lg bg-gray-900">
+            <img class="w-full" src="<%=project.cover%>" alt="Sunset in the mountains">
+            <div class="px-6 py-4">
+                <div class="font-bold text-xl mb-2"><%=project.name%></div>
+                <p class="text-gray-300 text-base justify-center">
+                    <%=project.desc%>
+                </p>
+            </div>
+        </div>
+
+        <% })%>
+
+        <!-- <div class="mt-16 max-w-sm rounded overflow-hidden shadow-lg bg-gray-900">
+            <img class="w-full"
+                src="https://megablock.xyz/twitterimage.png"
+                alt="Sunset in the mountains">
+            <div class="px-6 py-4">
+                <div class="font-bold text-xl mb-2">MegaBlock.XYZ</div>
+                <p class="text-gray-300 text-base justify-center">
+                    Really don't like a tweet? Block the author and everyone who liked it with one click.
+                </p>
+            </div>
+        </div>
+
+       
+        <div class="mt-16 max-w-sm rounded overflow-hidden shadow-lg bg-gray-900">
+            <img class="w-full"
+                src="https://vibes.fyi/metaimage.png"
+                alt="Sunset in the mountains">
+            <div class="px-6 py-4">
+                <div class="font-bold text-xl mb-2">Vibes.FYI</div>
+                <p class="text-gray-300 text-base justify-center">
+                    With all the bad happening in the world, share the good that happened to you today.
+                </p>
+            </div>
+        </div>
+
+        <div class="mt-16 max-w-sm rounded overflow-hidden shadow-lg bg-gray-900">
+            <img class="w-full"
+                src="https://ph-files.imgix.net/52de2e13-4217-493d-a135-9bc61e0a342e.png?auto=format&fit=crop&frame=1&h=512&w=1024"
+                alt="Sunset in the mountains">
+            <div class="px-6 py-4">
+                <div class="font-bold text-xl mb-2">Tweetledeee</div>
+                <p class="text-gray-300 text-base justify-center">
+                    Match with your Twitter crush, risk free.
+                </p>
+            </div>
+        </div>
+        <div class="mt-16 max-w-sm rounded overflow-hidden shadow-lg bg-gray-900">
+            <img class="w-full"
+                src="https://ph-files.imgix.net/52de2e13-4217-493d-a135-9bc61e0a342e.png?auto=format&fit=crop&frame=1&h=512&w=1024"
+                alt="Sunset in the mountains">
+            <div class="px-6 py-4">
+                <div class="font-bold text-xl mb-2">Tweetledeee</div>
+                <p class="text-gray-300 text-base justify-center">
+                    Match with your Twitter crush, risk free.
+                </p>
+            </div>
+        </div> -->
+     
+        
+    </div>
+        
+            
+
+</body>
+</html>

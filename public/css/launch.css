@@ -1,0 +1,26 @@
+body{
+    background-color: #000;
+    color: #fff;
+    font-family: "Inter", sans-serif !important;
+    -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 5em;
+}
+
+.go_back {
+  color: #fff;
+  text-decoration: none;
+  font-size: 30px;
+  border-bottom: 1px dotted #fff;
+  transition: 150ms ease-in-out;
+}
+.go_back:hover {
+  background-color: #fff;
+  color: #000;
+  text-decoration: line-through;
+}
+
+.heading{
+    margin-top: 1em;
+    font-size: 3em;
+}

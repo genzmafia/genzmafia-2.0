@@ -9,7 +9,7 @@ var base = new Airtable({apiKey: 'keyjeMS3U62hP7wfU'}).base('appDgNueeMhu1uIpy')
 
 app.use(express.static('public'));
 app.set('view engine', 'ejs');
-app.listen(process.env.PORT || 3000);
+
 
 app.get('/', function (req, res) {
     res.render('pages/index');
@@ -68,3 +68,7 @@ app.get('/launches', function async (req, res) {
         if (err) { console.error(err); return; }
     });
 });
+
+const port = process.env.PORT || 3000;
+
+app.listen(port, () => console.log(`Server running on ${port}, http://localhost:${port}`));

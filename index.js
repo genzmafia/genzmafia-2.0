@@ -26,7 +26,7 @@ app.get('/hacks', function (req, res) {
 
 app.get('/launches', function async (req, res) {
     const projects = []
-     base('Accepted').select({
+     base('Processed').select({
     // Selecting the first 3 records in Grid view:
         maxRecords: 10,
         view: "Grid view",
